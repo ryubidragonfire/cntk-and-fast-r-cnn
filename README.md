@@ -39,10 +39,10 @@ pip install -r requirements.txt
 ```
 
 For Windows users, visit http://www.lfd.uci.edu/~gohlke/pythonlibs/, and download:
-```
+
 scikit_image-0.12.3-cp34-cp34m-win_amd64.whl [link](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image)  
 opencv_python-3.1.0-cp34-cp34m-win_amd64.whl [link](http://www.lfd.uci.edu/~gohlke/pythonlibs/#opencv)
-```
+
 Install them by:
 
 ```python
