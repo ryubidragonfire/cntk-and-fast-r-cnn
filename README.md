@@ -1,5 +1,5 @@
 # cntk-and-fast-r-cnn
-Getting it set up with Azure DSVM, CNTK and Fast-R-CNN.
+Notes on setting up CNTK and Fast-R-CNN with Azure DSVM.
 
 # setting up
 Spin up an Azure DSVM. Come with CNTK.
