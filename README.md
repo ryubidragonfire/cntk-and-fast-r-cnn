@@ -13,7 +13,7 @@ Fast-R-CNN can be found at: https://github.com/Microsoft/CNTK/tree/master/Exampl
 ```python
 # at command prompt, type in the following:
 
-`conda env list
+conda env list
 
 # conda environments:
 #
