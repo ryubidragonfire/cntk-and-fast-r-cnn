@@ -34,8 +34,21 @@ Then,
 
 ```python
 python install_fastrcnn.py
+
+pip install -r requirements.txt
 ```
 
+For Windows users, visit http://www.lfd.uci.edu/~gohlke/pythonlibs/, and download:
+```
+scikit_image-0.12.3-cp34-cp34m-win_amd64.whl  
+opencv_python-3.1.0-cp34-cp34m-win_amd64.whl
+```
+Install them by:
+
+```python
+pip install your_download_folder/scikit_image-0.12.3-cp34-cp34m-win_amd64.whl
+pip install your_download_folder/opencv_python-3.1.0-cp34-cp34m-win_amd64.whl
+```
 Now, follow either:
 
 https://github.com/Azure/ObjectDetectionUsingCntk, from **Part 1**
