@@ -46,7 +46,7 @@ https://github.com/Microsoft/CNTK/tree/master/Examples/Image/Detection/FastRCNN,
 
 In case you need `past`:
 
->`past` is a package to aid with Python 2/3 compatibility. Whereas `future` contains backports of Python 3 constructs to Python 2, `past` provides implementations of some Python 2 constructs in Python 3. It is intended to be used sparingly, as a way of running old Python 2 code from Python 3 until it is ported properly.>
+>`past` is a package to aid with Python 2/3 compatibility. Whereas `future` contains backports of Python 3 constructs to Python 2, `past` provides implementations of some Python 2 constructs in Python 3. It is intended to be used sparingly, as a way of running old Python 2 code from Python 3 until it is ported properly.
 
 ``` python
 pip install future
