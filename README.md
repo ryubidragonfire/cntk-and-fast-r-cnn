@@ -51,7 +51,8 @@ pip install your_download_folder/opencv_python-3.1.0-cp34-cp34m-win_amd64.whl
 ```
 Now, follow either:
 
-https://github.com/Azure/ObjectDetectionUsingCntk, from **Part 1**. Great for understanding how to use as-it-is.
+https://github.com/Azure/ObjectDetectionUsingCntk, from **Part 1**. 
+- **Part 1**: How to use as-it-is.
 
 or:
 
