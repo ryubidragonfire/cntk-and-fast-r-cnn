@@ -60,3 +60,6 @@ https://github.com/Azure/ObjectDetectionUsingCntk, from **Part 1**.
 or:
 
 https://github.com/Microsoft/CNTK/tree/master/Examples/Image/Detection/FastRCNN, from **Preprocess data**
+
+### Reference:
+[Free online book on neural network and deep learning](http://neuralnetworksanddeeplearning.com/index.html)
