@@ -54,6 +54,8 @@ Now, follow either:
 https://github.com/Azure/ObjectDetectionUsingCntk, from **Part 1**. 
 - **Part 1**: How to use as-it-is. Extract feature via NN, SVM as classifier.
 - **Part 2**: 'Re-train' based on AlexNet, with softmax as output layer.
+- **Part 3**: using your own data, image annotation and labelling, about hyper-parameters, publishing model as REST API.
+- **Part 4**: Reproduce results with Pascal VOC dataset.
 
 or:
 
