@@ -39,7 +39,7 @@ python install_fastrcnn.py
 pip install -r requirements.txt
 ```
 
-### For the Linux VM
+### For Linux VM
 it might be helpful to include the "sudo" command, if you receive "permission denied"-exceptions:
 
 ```bash
