@@ -79,5 +79,8 @@ or:
 
 https://github.com/Microsoft/CNTK/tree/master/Examples/Image/Detection/FastRCNN, from **Preprocess data**
 
+### Expected Inputs
+- see https://github.com/Azure/ObjectDetectionUsingCntk/tree/master/data/grocery
+
 ### Reference:
 [Free online book on neural network and deep learning](http://neuralnetworksanddeeplearning.com/index.html)
