@@ -79,6 +79,9 @@ or:
 
 https://github.com/Microsoft/CNTK/tree/master/Examples/Image/Detection/FastRCNN, from **Preprocess data**
 
+or:
+https://github.com/Microsoft/CNTK/wiki/Object-Detection-using-Fast-R-CNN
+
 ### Expected Inputs
 - see https://github.com/Azure/ObjectDetectionUsingCntk/tree/master/data/grocery
 
