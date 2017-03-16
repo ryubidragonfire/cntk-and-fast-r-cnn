@@ -85,5 +85,9 @@ https://github.com/Microsoft/CNTK/wiki/Object-Detection-using-Fast-R-CNN
 ### Expected Inputs
 - see https://github.com/Azure/ObjectDetectionUsingCntk/tree/master/data/grocery
 
+### Additional possible things to setup
+- Ensure you have visual C++ common tools: https://github.com/Microsoft/CNTK/wiki/Setup-CNTK-on-Windows
+- [Pre-compiled](https://github.com/Microsoft/CNTK/wiki/Object-Detection-using-Fast-R-CNN#pre-compiled-binaries-for-bounding-box-regression-and-non-maximum-suppression) binaries for bounding box regression and non maximum suppression 
+
 ### Reference:
 [Free online book on neural network and deep learning](http://neuralnetworksanddeeplearning.com/index.html)
