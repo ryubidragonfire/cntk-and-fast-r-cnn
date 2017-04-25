@@ -92,3 +92,52 @@ https://github.com/Microsoft/CNTK/wiki/Object-Detection-using-Fast-R-CNN
 
 ### Reference:
 [Free online book on neural network and deep learning](http://neuralnetworksanddeeplearning.com/index.html)
+
+### Bugs??
+- https://github.com/Microsoft/CNTK/blob/master/Examples/Image/Detection/FastRCNN/cntk_helpers.py 
+Line 652:
+```python
+def imread(imgPath, boThrowErrorIfExifRotationTagSet = True):
+    if not os.path.exists(imgPath):
+        print("ERROR: image path does not exist.")
+        error
+
+    rotation = rotationFromExifTag(imgPath)
+    if boThrowErrorIfExifRotationTagSet and rotation != 0:
+        print ("Error: exif roation tag set, image needs to be rotated by %d degrees." % rotation)
+    img = cv2.imread(imgPath)
+    if img is None:
+        print ("ERROR: cannot load image " + imgPath)
+        error
+    if rotation != 0:
+        img = imrotate(img, -90).copy()  # got this error occassionally without copy "TypeError: Layout of the output array img is incompatible with cv::Mat"
+    return img
+```
+The error message after running:
+>> `python C1_DrawBboxesOnImages.py`
+Is:
+`NameError: name 'imrotate' is not defined`
+
+**possible fixes:**
+Courtesy of P. Buehler
+```python
+from PIL import Image
+
+def imrotate(img, angle):
+        imgPil = imconvertCv2Pil(img)
+        imgPil = imgPil.rotate(angle, expand = True)
+        return imconvertPil2Cv(imgPil)
+
+def imconvertCv2Pil(img):
+    cv2_im = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+    pil_im = Image.fromarray(cv2_im)
+    return pil_im
+
+def imconvertCv2Numpy(img):
+    (b,g,r) = cv2.split(img)
+    return cv2.merge([r,g,b])
+
+def imconvertPil2Cv(pilImg):
+    return imconvertPil2Numpy(pilImg)[:, :, ::-1]
+```
+
