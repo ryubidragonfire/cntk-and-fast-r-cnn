@@ -115,7 +115,7 @@ def imread(imgPath, boThrowErrorIfExifRotationTagSet = True):
 ```
 The error message after running:
 
->> `python C1_DrawBboxesOnImages.py`
+> `python C1_DrawBboxesOnImages.py`
 
 is:
 
