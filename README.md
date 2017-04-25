@@ -114,12 +114,15 @@ def imread(imgPath, boThrowErrorIfExifRotationTagSet = True):
     return img
 ```
 The error message after running:
+
 >> `python C1_DrawBboxesOnImages.py`
-Is:
+
+is:
+
 `NameError: name 'imrotate' is not defined`
 
 **possible fixes:**
-Courtesy of P. Buehler
+Courtesy of P. Bue....
 ```python
 from PIL import Image
 
