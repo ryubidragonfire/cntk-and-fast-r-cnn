@@ -39,23 +39,6 @@ python install_fastrcnn.py
 pip install -r requirements.txt
 ```
 
-### For Linux VM
-it might be helpful to include the "sudo" command, if you receive "permission denied"-exceptions:
-
-```bash
-
-sudo python install_fastrcnn.py
-
-```
-
-If the pip install fails, move to the root directory with and grant permissions to the whole anaconda directory.
-
-```bash
-cd/
-sudo chmod -R 777 anaconda
-```
-
-### For Windows users
 visit http://www.lfd.uci.edu/~gohlke/pythonlibs/, and download:
 
 scikit_image-0.12.3-cp34-cp34m-win_amd64.whl [link](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image)  
