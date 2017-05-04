@@ -70,6 +70,20 @@ https://github.com/Microsoft/CNTK/wiki/Object-Detection-using-Fast-R-CNN
 
 ### Additional possible things to setup
 - Ensure you have visual C++ common tools: https://github.com/Microsoft/CNTK/wiki/Setup-CNTK-on-Windows
+- if you get this error: `error: Unable to find vcvarsall.bat`, do:
+    - For Windows installations: [reference](http://stackoverflow.com/questions/2817869/error-unable-to-find-vcvarsall-bat)
+      While running setup.py for package installations, Python 2.7 searches for an installed Visual Studio 2008. You can trick Python to use a newer Visual Studio by setting the correct path in VS90COMNTOOLS environment variable before calling setup.py.
+      
+      Execute the following command based on the version of Visual Studio installed:
+      
+      Visual Studio 2010 (VS10): `SET VS90COMNTOOLS=%VS100COMNTOOLS%`
+      
+      Visual Studio 2012 (VS11): `SET VS90COMNTOOLS=%VS110COMNTOOLS%`
+      
+      Visual Studio 2013 (VS12): `SET VS90COMNTOOLS=%VS120COMNTOOLS%`
+      
+      Visual Studio 2015 (VS14): `SET VS90COMNTOOLS=%VS140COMNTOOLS%`
+      
 - [Pre-compiled](https://github.com/Microsoft/CNTK/wiki/Object-Detection-using-Fast-R-CNN#pre-compiled-binaries-for-bounding-box-regression-and-non-maximum-suppression) binaries for bounding box regression and non maximum suppression 
 -  goto `C:\git\CNTK\Examples\Image\Detection\FastRCNN\fastRCNN\utils` to rename ~cython_bbox.cp34-win_amd64.pyd~ to `cython_bbox.pyd`
 
