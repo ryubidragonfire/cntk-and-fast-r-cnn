@@ -85,6 +85,7 @@ https://github.com/Microsoft/CNTK/wiki/Object-Detection-using-Fast-R-CNN
       Visual Studio 2015 (VS14): `SET VS90COMNTOOLS=%VS140COMNTOOLS%`
       
 - [Pre-compiled](https://github.com/Microsoft/CNTK/wiki/Object-Detection-using-Fast-R-CNN#pre-compiled-binaries-for-bounding-box-regression-and-non-maximum-suppression) binaries for bounding box regression and non maximum suppression 
+- May need to `pip install cython`
 -  goto `C:\git\CNTK\Examples\Image\Detection\FastRCNN\fastRCNN\utils` to rename ~cython_bbox.cp34-win_amd64.pyd~ to `cython_bbox.pyd`
 
 ### Reference:
